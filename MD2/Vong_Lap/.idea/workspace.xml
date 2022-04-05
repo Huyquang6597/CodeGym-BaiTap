@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f5c5e22-707b-4899-a2e7-c5ccd1e8f9fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/HienThi20SNTDau.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HienThiCacLoaiHinh.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HienThiCacSNTNhoHon100.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../IJ/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../IJ/.idea/description.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../IJ/.idea/encodings.xml" beforeDir="false" />
@@ -16,6 +15,8 @@
       <change beforePath="$PROJECT_DIR$/../../IJ/src/DemoJava.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../IJ/src/com/company/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../IJ/untitled104.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,10 +98,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager" selected="Application.HienThi20SNTDau">
+  <component name="RunManager" selected="Application.HienThiCacSNTNhoHon100">
     <configuration name="HienThi20SNTDau" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HienThi20SNTDau" />
+      <module name="untitled104" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HienThiCacSNTNhoHon100" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HienThiCacSNTNhoHon100" />
       <module name="untitled104" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -119,9 +128,11 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.HienThi20SNTDau" />
+      <item itemvalue="Application.HienThiCacSNTNhoHon100" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HienThiCacSNTNhoHon100" />
         <item itemvalue="Application.HienThi20SNTDau" />
       </list>
     </recent_temporary>
@@ -134,7 +145,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1649083945300</updated>
-      <workItem from="1649083947410" duration="3172000" />
+      <workItem from="1649083947410" duration="4085000" />
+      <workItem from="1649122147382" duration="2256000" />
     </task>
     <servers />
   </component>
