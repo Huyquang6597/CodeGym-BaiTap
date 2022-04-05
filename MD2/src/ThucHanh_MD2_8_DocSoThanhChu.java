@@ -1,13 +1,27 @@
 import java.util.Scanner;
 
-public class ThucHanh_MD2_8_DocSoThanhChu {
+public class ChuyenSo_Chu {
     public static void main(String[] args) {
-        int a;
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter your number");
-        a = sc.nextInt();
-        if (a>=10 && a< 20){
-            System.out.println();
+        String[] mang = {"Không", "Một", "Hai", "Ba",
+                "Bon", "Nam", "Sau", "Bay", "Tam", "Chin"};
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Mời nhập số");
+        int so = scanner.nextInt();
+        if (so < 10) {
+            for (int i = 0; i < mang.length; i++) {
+                System.out.println(mang[so]);
+                break;
+            }
+        } else if (so < 100) {
+            for (int i = 0; i < mang.length; i++) {
+                System.out.println(mang[so / 10] + "mươi" + mang[so % 10]);
+                break;
+            }
+        } else {
+            for (int i = 0; i < mang.length; i++) {
+                System.out.println(mang[so / 100] + "trăm" + mang[(so % 100) / 10] + "mươi" + mang[so % 10]);
+                break;
+            }
         }
     }
 }

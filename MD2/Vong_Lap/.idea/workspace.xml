@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f5c5e22-707b-4899-a2e7-c5ccd1e8f9fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/HienThiCacSNTNhoHon100.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../IJ/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../IJ/.idea/description.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../IJ/.idea/encodings.xml" beforeDir="false" />
@@ -15,7 +14,6 @@
       <change beforePath="$PROJECT_DIR$/../../IJ/src/DemoJava.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../IJ/src/com/company/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../IJ/untitled104.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -146,7 +144,7 @@
       <option name="presentableId" value="Default" />
       <updated>1649083945300</updated>
       <workItem from="1649083947410" duration="4085000" />
-      <workItem from="1649122147382" duration="2256000" />
+      <workItem from="1649122147382" duration="2688000" />
     </task>
     <servers />
   </component>
