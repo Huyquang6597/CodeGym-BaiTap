@@ -8,15 +8,14 @@ public class TimGiaTriMaxTrongMang {
         size = sc.nextInt();
         int []array = new int [size];
 
-        for (int i = 0;i<array.length;i++){
-        if(size>20){
-            System.out.println("Size should not exceed 20");
-        }
-        }
-        for (int i = 0;i<array.length;i++){
+//        for (int i = 0;i<array.length;i++){
+//        if(size>20){
+//            System.out.println("Size should not exceed 20");
+//        }
+
+        for (int i = 0;i<size;i++){
             System.out.println("Enter element"+ (i+1)+": ");
             array[i]=sc.nextInt();
-            i++;
         }
         System.out.print("Property list: ");
         for (int j = 0; j < array.length; j++) {
@@ -35,3 +34,4 @@ public class TimGiaTriMaxTrongMang {
 
     }
 }
+
