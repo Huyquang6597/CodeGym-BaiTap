@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Chuyendoi_Nhietdo {
+public class ChuyenDoiNhietDo {
     public static double C_F(double C) {
         double F;
         F = (9/5)*C +32;
