@@ -1,4 +1,4 @@
-package QuadraticEquation;
+package quadraticequation;
 
 import java.util.Scanner;
 

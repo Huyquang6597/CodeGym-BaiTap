@@ -1,4 +1,4 @@
-package QuadraticEquation;
+package quadraticequation;
 
 public class ptb2 {
     private double a ,b ,c;
