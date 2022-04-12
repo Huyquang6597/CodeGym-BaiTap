@@ -6,10 +6,11 @@ public class Circle {
     private double radius;
     private String color;
 
-    public Circle(){
+    public Circle() {
 
     }
-    public Circle(double radius , String color){
+
+    public Circle(double radius, String color) {
         this.radius = radius;
         this.color = color;
     }
@@ -29,6 +30,7 @@ public class Circle {
     public void setColor(String color) {
         this.color = color;
     }
+
     public double getArea() {
         return radius * radius * Math.PI;
     }
@@ -37,12 +39,13 @@ public class Circle {
     public String toString() {
         return "Circle{" + "radius=" + radius + ", color='" + color + '\'' + '}';
     }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nhap ban kinh: ");
         double radius = scanner.nextDouble();
-        Circle circle1 = new Circle();
-        System.out.println("Dien tich hinh tron la: "+circle1.getArea());
-
+        Circle circle1 = new Circle(radius, "White");
+        System.out.println("Dien tich hinh tron la: " + circle1.getArea() );
+        System.out.println(circle1);
     }
 }
