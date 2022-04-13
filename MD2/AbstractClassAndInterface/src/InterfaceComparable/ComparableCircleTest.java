@@ -1,6 +1,7 @@
 package InterfaceComparable;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class ComparableCircleTest {
@@ -14,8 +15,8 @@ public class ComparableCircleTest {
         for (ComparableCircle circle : circles) {
             System.out.println(circle);
         }
-
-        Arrays.sort(circles);
+        Comparator circleComparator = new  InterfaceComparator();
+        Arrays.sort(circles,circleComparator);
 
         System.out.println("After-sorted:");
         for (ComparableCircle circle : circles) {
