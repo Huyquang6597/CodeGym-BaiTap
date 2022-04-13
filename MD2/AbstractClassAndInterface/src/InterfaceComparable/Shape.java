@@ -1,6 +1,6 @@
 package InterfaceComparable;
 
-public class Shape {
+public abstract class Shape {
     private String color = "Green";
     private boolean filled = true;
 
@@ -34,4 +34,8 @@ public class Shape {
         return "Shape{" + "color='" + color + '\'' + ", filled=" + filled + '}';
     }
 
+
+
+
+    public abstract void resizeable(double percent);
 }
