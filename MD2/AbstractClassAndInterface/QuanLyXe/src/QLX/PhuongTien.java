@@ -1,6 +1,6 @@
 package QLX;
 
-public class PhuongTien implements Comparable<XeMay> {
+public class PhuongTien implements Comparable<Oto> {
     private String hang;
     private String mau;
     private String ten;
@@ -48,9 +48,12 @@ public class PhuongTien implements Comparable<XeMay> {
         this.gia = gia;
     }
 
-
     @Override
-    public int compareTo(XeMay o) {
-        return this.getGia() - o.getGia();
+    public int compareTo(Oto o) {
+        return 0;
     }
-}
+//    @Override
+//    public int compareTo(XeMay o) {
+//        return this.getGia() - o.getGia();
+    }
+
