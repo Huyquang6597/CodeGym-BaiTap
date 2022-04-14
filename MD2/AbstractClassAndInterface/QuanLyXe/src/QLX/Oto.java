@@ -1,6 +1,6 @@
 package QLX;
 
-public class Oto extends PhuongTien {
+public class Oto extends PhuongTien implements Comparable<Oto> {
     private int soCho;
 
 
@@ -19,6 +19,10 @@ public class Oto extends PhuongTien {
 
     public void setSoCho(int soCho) {
         this.soCho = soCho;
+    }
+    @Override
+    public int compareTo(Oto o) {
+        return this.getGia() - o.getGia();
     }
 
     @Override

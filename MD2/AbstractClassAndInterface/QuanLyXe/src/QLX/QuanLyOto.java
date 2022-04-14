@@ -29,13 +29,13 @@ public class QuanLyOto implements QuanLy<Oto> {
         danhSachXoa = new Oto[size1 - 1];
         int viTri = timKiem(name);
         if (viTri != -1) {
-         for (int i = 0 ; i < viTri ; i++){
-         danhSachXoa[i]= danhSach1[i];
-         }
-         for (int i = viTri ;i < size1-1 ;i++){
-danhSachXoa[i] = danhSach1[i+1];
-         }
-        }else {
+            for (int i = 0; i < viTri; i++) {
+                danhSachXoa[i] = danhSach1[i];
+            }
+            for (int i = viTri; i < size1 - 1; i++) {
+                danhSachXoa[i] = danhSach1[i + 1];
+            }
+        } else {
             System.out.println("Không tìm thấy!");
         }
     }
@@ -62,6 +62,11 @@ danhSachXoa[i] = danhSach1[i+1];
         }
         System.out.println("-----------------------");
     }
+    public void in2(){
+        for (int i = 0 ; i < danhSachXoa.length;i++){
+            System.out.println(danhSachXoa[i]);
+        }
+    }
 
     public static void main(String[] args) {
         QuanLyOto ql1 = new QuanLyOto();
@@ -72,11 +77,11 @@ danhSachXoa[i] = danhSach1[i+1];
         ql1.them(xh2);
         ql1.them(xh3);
         ql1.in();
-        Oto xm4 = new Oto("Mazda", "Xanh", "R1", 700, 6);
-        ql1.sua("R15", xm4);
-        ql1.in();
+//        Oto xm4 = new Oto("Mazda", "Xanh", "R1", 700, 6);
+//        ql1.sua("R15", xm4);
+//        ql1.in();
         ql1.xoa("R3");
-        ql1.in();
+        ql1.in2();
 //        ql1.sapXep();
 //        ql1.in();
     }
