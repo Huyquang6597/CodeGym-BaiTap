@@ -16,7 +16,9 @@ public class QuanLyXeMay implements QuanLy<XeMay> {
 
     @Override
     public void sua(String name, XeMay xeMay) {
-        danhSach[timKiem(name)] = xeMay;
+//        danhSach[timKiem(name)] = xeMay;
+        int viTri = timKiem(name);
+
 
     }
 
