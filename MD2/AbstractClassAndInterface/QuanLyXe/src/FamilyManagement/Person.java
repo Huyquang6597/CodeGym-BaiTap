@@ -4,14 +4,14 @@ public class Person {
     private String name;
     private int age;
     private String job;
-    private int identityCard;
+    private long identityCard;
     private String address;
     private int familyMember;
 
     public Person() {
     }
 
-    public Person(String name, int age, String job, int identityCard , String address , int familyMember) {
+    public Person(String name, int age, String job, long identityCard , String address , int familyMember) {
         this.name = name;
         this.age = age;
         this.job = job;
@@ -44,11 +44,11 @@ public class Person {
         this.job = job;
     }
 
-    public int getIdentityCard() {
+    public long getIdentityCard() {
         return identityCard;
     }
 
-    public void setIdentityCard(int identityCard) {
+    public void setIdentityCard(long identityCard) {
         this.identityCard = identityCard;
     }
 
@@ -66,5 +66,10 @@ public class Person {
 
     public void setFamilyMember(int familyMember) {
         this.familyMember = familyMember;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" + "name='" + name + '\'' + ", age=" + age + ", job='" + job + '\'' + ", identityCard=" + identityCard + ", address='" + address + '\'' + ", familyMember=" + familyMember + '}';
     }
 }
