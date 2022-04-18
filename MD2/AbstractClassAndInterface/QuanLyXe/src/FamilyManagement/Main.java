@@ -22,8 +22,8 @@ public class Main {
             sc.nextLine();
 
             if (choice == 1) {
-                System.out.println("Nhap ten thanh vien"); String name = sc.nextLine();
-                System.out.println("Nhap tuoi thanh vien"); int age = sc.nextInt();
+                System.out.println("Nhap ten thanh vien"); String name = sc.nextLine();// sc.NextLine() là mỗi lần enter máy sẽ hiểu là mình đã nhập
+                System.out.println("Nhap tuoi thanh vien"); int age = Integer.parseInt(sc.nextLine());//Ép kiểu về kiểu số thực nhưng vẫn là sc.NextLine()
                 System.out.println("Nhap cong viec cua thanh vien"); String job = sc.nextLine();
                 sc.nextLine();
                 System.out.println("Nhap so CCCD"); long identityCard = sc.nextLong();
