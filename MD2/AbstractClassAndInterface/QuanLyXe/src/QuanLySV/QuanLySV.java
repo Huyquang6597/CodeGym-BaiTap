@@ -3,7 +3,8 @@ package QuanLySV;
 import QLX.Oto;
 
 public class QuanLySV implements QuanLy<Student> {
-
+//    public static void main(String[] args)
+//    }
     private Student[] danhSach = new Student[4];
     private int size = 0;
     private Student[] danhSachXoa;

@@ -39,7 +39,6 @@ public class QuanLyOto implements QuanLy<Oto> {
             System.out.println("Không tìm thấy!");
         }
     }
-
     @Override
     public int timKiem(String name) {
         for (int i = 0; i < size1; i++) {
@@ -85,4 +84,6 @@ public class QuanLyOto implements QuanLy<Oto> {
 //        ql1.sapXep();
 //        ql1.in();
     }
+
 }
+
