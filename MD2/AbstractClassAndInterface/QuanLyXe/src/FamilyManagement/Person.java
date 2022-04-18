@@ -70,6 +70,6 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" + "name='" + name + '\'' + ", age=" + age + ", job='" + job + '\'' + ", identityCard=" + identityCard + ", address='" + address + '\'' + ", familyMember=" + familyMember + '}';
+        return "Thong tin ca nhan {" + "Ten: '" + name + '\'' + ", Tuoi: " + age + ", Cong viec: " + job + '\'' + ", So the CCCD: " + identityCard + ", Dia chi: " + address + '\'' + ", So thanh vien trong gia dinh: " + familyMember + '}';
     }
 }

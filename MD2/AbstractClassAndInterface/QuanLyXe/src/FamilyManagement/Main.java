@@ -22,20 +22,31 @@ public class Main {
             sc.nextLine();
 
             if (choice == 1) {
-                System.out.println("Nhap ten thanh vien"); String name = sc.nextLine();// sc.NextLine() là mỗi lần enter máy sẽ hiểu là mình đã nhập
-                System.out.println("Nhap tuoi thanh vien"); int age = Integer.parseInt(sc.nextLine());//Ép kiểu về kiểu số thực nhưng vẫn là sc.NextLine()
-                System.out.println("Nhap cong viec cua thanh vien"); String job = sc.nextLine();
+                System.out.println("Nhap ten thanh vien");
+                String name = sc.nextLine();// sc.NextLine() là mỗi lần enter máy sẽ hiểu là mình đã nhập
+                System.out.println("Nhap tuoi thanh vien");
+                int age = sc.nextInt(); //Integer.parseInt(sc.nextLine()); Ép kiểu về kiểu số thực nhưng vẫn là sc.NextLine()
+                System.out.println("Nhap cong viec cua thanh vien");
+                String job = sc.nextLine();
                 sc.nextLine();
-                System.out.println("Nhap so CCCD"); long identityCard = sc.nextLong();
-                System.out.println("Nhap dia chi"); String address = sc.nextLine();
+                System.out.println("Nhap so CCCD");
+                long identityCard = sc.nextLong();
+                System.out.println("Nhap dia chi");
+                String address = sc.nextLine();
                 sc.nextLine();
-                System.out.println("Nhap so thanh vien"); int familyMember = sc.nextInt();
-                Person person = new Person(name , age , job , identityCard , address , familyMember);
+                System.out.println("Nhap so thanh vien");
+                int familyMember = sc.nextInt();
+                Person person = new Person(name, age, job, identityCard, address, familyMember);
                 family.add(person);
+                family.display();
 
 
             } else if (choice == 2) {
-
+                System.out.println("Nhap ten thanh vien muon xoa: ");
+                String name = sc.nextLine();
+                System.out.println("Xoa thanh vien trong gia dinh" + name);
+                family.delete(name);
+                family.display();
             } else if (choice == 3) {
 
             }
