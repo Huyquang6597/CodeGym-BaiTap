@@ -37,11 +37,11 @@ public class QuanLyS {
         }
     }
     public void delete(String name){
-        int indenOfStudent = findByName(name);
-        if ( indenOfStudent == -1){
+        int indexOfStudent = findByName(name);
+        if ( indexOfStudent == -1){
             System.out.println("Không có!");
         } else {
-            students.remove(indenOfStudent);
+            students.remove(indexOfStudent);
         }
     }
     public void sortByAge(){
