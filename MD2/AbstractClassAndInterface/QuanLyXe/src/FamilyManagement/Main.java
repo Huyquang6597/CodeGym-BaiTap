@@ -48,7 +48,26 @@ public class Main {
                 family.delete(name);
                 family.display();
             } else if (choice == 3) {
+                System.out.println("nhap vao ten muon sua");
+                String editName = sc.nextLine();
 
+                System.out.println("Nhap ten thanh vien");
+                String name = sc.nextLine();// sc.NextLine() là mỗi lần enter máy sẽ hiểu là mình đã nhập
+                System.out.println("Nhap tuoi thanh vien");
+                int age = sc.nextInt(); //Integer.parseInt(sc.nextLine()); Ép kiểu về kiểu số thực nhưng vẫn là sc.NextLine()
+                System.out.println("Nhap cong viec cua thanh vien");
+                String job = sc.nextLine();
+                sc.nextLine();
+                System.out.println("Nhap so CCCD");
+                long identityCard = sc.nextLong();
+                System.out.println("Nhap dia chi");
+                String address = sc.nextLine();
+                sc.nextLine();
+                System.out.println("Nhap so thanh vien");
+                int familyMember = sc.nextInt();
+               Person newPerson = new Person(name, age, job, identityCard, address, familyMember);
+                family.edit(editName , newPerson);
+                family.display();
             }
 
         } while (choice != 0);
