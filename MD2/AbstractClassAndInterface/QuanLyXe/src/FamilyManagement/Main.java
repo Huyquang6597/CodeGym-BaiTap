@@ -11,31 +11,32 @@ public class Main {
         do {
             System.out.println("*******************Menu*******************");
             System.out.println("------------------------------------------");
-            System.out.println("--------Nhap thong tin thanh vien--------");
-            System.out.println("Nhap ten thanh vien");
-String name = sc.toString();
-            System.out.println("Nhap tuoi thanh vien");
-            int age = sc.nextInt();
-            System.out.println("Nhap cong viec cua thanh vien");
-            String job = sc.toString();
-            System.out.println("Nhap so CCCD");
-            long identityCard = sc.nextLong();
-            System.out.println("Nhap dia chi");
-            String address = sc.toString();
-            System.out.println("Nhap so thanh vien");
-            int familyMember = sc.nextInt();
+            System.out.println("--------------Chon chuc nang--------------");
+
             System.out.println(
                     "1. Them thanh vien. \n"
-                    +"2. Xoa thanh vien. \n"
-                    +"3. Sua thanh vien. \n"
-                    +"0. Thoat. \n");
-            choice = sc.nextInt();
+                            + "2. Xoa thanh vien. \n"
+                            + "3. Sua thanh vien. \n"
+                            + "0. Thoat. \n");
+            choice = sc.nextInt();//khi xuống dòng ngay thì nó sẽ tính vào dòng name nên phải thêm 1 dòng nữa
+            sc.nextLine();
 
-            if(choice == 1){
+            if (choice == 1) {
+                System.out.println("Nhap ten thanh vien"); String name = sc.nextLine();
+                System.out.println("Nhap tuoi thanh vien"); int age = sc.nextInt();
+                System.out.println("Nhap cong viec cua thanh vien"); String job = sc.nextLine();
+                sc.nextLine();
+                System.out.println("Nhap so CCCD"); long identityCard = sc.nextLong();
+                System.out.println("Nhap dia chi"); String address = sc.nextLine();
+                sc.nextLine();
+                System.out.println("Nhap so thanh vien"); int familyMember = sc.nextInt();
+                Person person = new Person(name , age , job , identityCard , address , familyMember);
+                family.add(person);
 
-            } else if(choice == 2){
 
-            } else if(choice == 3){
+            } else if (choice == 2) {
+
+            } else if (choice == 3) {
 
             }
 
