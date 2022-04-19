@@ -45,7 +45,7 @@ public class DemoStackChuoiDaoNguoc {
         }
         System.out.println();
 
-        //ví dụ đảo ngược số
+        //ví dụ tách số có nhiều chữ số thành các chữ số
 
         System.out.println("Nhap vao so muon tach : ");
         Scanner scanner1 = new Scanner(System.in);
