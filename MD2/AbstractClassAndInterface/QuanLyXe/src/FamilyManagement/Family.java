@@ -17,6 +17,7 @@ public class Family extends Person {
     public int findByName(String name) {
         for (int i = 0; i < people.size(); i++) {
             if (people.get(i).getName().equals(name)) {
+                System.out.println(people.get(i));
                 return i;
             }
         }
@@ -44,6 +45,17 @@ public class Family extends Person {
     public void display() {
         for (int i = 0; i < people.size(); i++) {
             System.out.println(people.get(i));
+        }
+        System.out.println("-----------------------");
+    }
+
+    public void displayMinAge() {
+        int minAge = people.get(0).getAge();
+        for (int i = 0; i < people.size(); i++) {
+           if(minAge > people.get(i)){
+               minAge = getAge();
+               System.out.println(minAge);
+           }
         }
         System.out.println("-----------------------");
     }

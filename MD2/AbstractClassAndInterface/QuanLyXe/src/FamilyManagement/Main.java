@@ -17,6 +17,8 @@ public class Main {
                     "1. Them thanh vien. \n"
                             + "2. Xoa thanh vien. \n"
                             + "3. Sua thanh vien. \n"
+                            + "4. Tim kiem thanh vien. \n"
+                            + "5. Hien thi thanh vien nho tuoi nhat. \n"
                             + "0. Thoat. \n");
             choice = sc.nextInt();//khi xuống dòng ngay thì nó sẽ tính vào dòng name nên phải thêm 1 dòng nữa
             sc.nextLine();
@@ -52,9 +54,9 @@ public class Main {
                 String editName = sc.nextLine();
 
                 System.out.println("Nhap ten thanh vien");
-                String name = sc.nextLine();// sc.NextLine() là mỗi lần enter máy sẽ hiểu là mình đã nhập
+                String name = sc.nextLine();
                 System.out.println("Nhap tuoi thanh vien");
-                int age = sc.nextInt(); //Integer.parseInt(sc.nextLine()); Ép kiểu về kiểu số thực nhưng vẫn là sc.NextLine()
+                int age = sc.nextInt();
                 System.out.println("Nhap cong viec cua thanh vien");
                 String job = sc.nextLine();
                 sc.nextLine();
@@ -68,6 +70,17 @@ public class Main {
                Person newPerson = new Person(name, age, job, identityCard, address, familyMember);
                 family.edit(editName , newPerson);
                 family.display();
+            } else if (choice == 4) {
+                System.out.println("Nhap ten nguoi muon tim kiem");
+                String findName = sc.nextLine();
+                System.out.println("Hien thi nguoi ten : "+ findName);
+                family.findByName(findName);
+
+            }
+            else if (choice == 5) {
+                System.out.println("Nguoi nho tuoi nhat là: ");
+                int minAge1 = sc.nextInt();
+                family.displayMinAge(minAge1);
             }
 
         } while (choice != 0);
