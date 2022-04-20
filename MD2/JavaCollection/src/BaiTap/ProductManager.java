@@ -14,12 +14,20 @@ public class ProductManager implements Manager<Product> {
 
     @Override
     public void edit(int id, Product product) {
-
+    if(findById(id) != -1) {
+        productsList.set(findById(id), product);
+    } else {
+        System.out.println("Khong co!");
+    }
     }
 
     @Override
     public void delete(int id) {
-
+        if(findById(id) != -1) {
+            productsList.remove(findById(id));
+        } else {
+            System.out.println("Khong co!");
+        }
     }
 
     @Override
@@ -31,37 +39,25 @@ public class ProductManager implements Manager<Product> {
 
     @Override
     public int findById(int id) {
-        for (int i = 0 ;)
-        return 0;
+        for (int i = 0 ; i<productsList.size(); i++){
+            if(productsList.get(i).getId() == id){
+                return i;
+            }
+        }
+        return -1;
     }
 
-//    public ProductManager() {
-//        this.products = new ArrayList<>();
-//    }
 
+    @Override
+    public int findByName(String name) {
+        for (int i = 0 ; i<productsList.size(); i++){
+            if(productsList.get(i).getName().equals(name)){
+                System.out.println(productsList.get(i));
+                return i;
+            }
+        }
+     return -1;
 
-//
-//    public int findByName(String name){
-//        for (int i = 0 ; i<products.size(); i++){
-//            if(products.get(i).getName().equals(name)){
-//                System.out.println(products.get(i));
-//                return i;
-//            }
-//        }
-//        return -1;
-//    }
-//    public int findById(int id){
-//        for (int i = 0 ; i<products.size(); i++){
-//            if(products.get(i).getName().equals(id)){
-//                System.out.println(products.get(i));
-//                return i;
-//            }
-//        }
-//        return -1;
-//    }
-//
-//
-//    public void edit(int id , Product product2){
-//        int indexOfProduct =
-//    }
+    }
+
 }

@@ -6,4 +6,5 @@ public interface Manager<T> {
     void delete(int id);
     void display();
     int findById(int id);
+    int findByName(String name);
 }
