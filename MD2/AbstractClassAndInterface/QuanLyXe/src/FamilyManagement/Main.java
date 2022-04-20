@@ -79,8 +79,8 @@ public class Main {
             }
             else if (choice == 5) {
                 System.out.println("Nguoi nho tuoi nhat là: ");
-                int minAge1 = sc.nextInt();
-                family.displayMinAge(minAge1);
+                int indexOfMin1 = sc.nextInt();
+                family.displayMinAge(indexOfMin1);
             }
 
         } while (choice != 0);

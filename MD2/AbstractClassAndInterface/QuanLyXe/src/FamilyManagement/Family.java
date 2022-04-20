@@ -51,12 +51,15 @@ public class Family extends Person {
 
     public void displayMinAge() {
         int minAge = people.get(0).getAge();
+        int indexOfMin = -1;
         for (int i = 0; i < people.size(); i++) {
-           if(minAge > people.get(i)){
-               minAge = getAge();
-               System.out.println(minAge);
+           if(minAge > people.get(i).getAge()){
+               minAge = people.get(i).getAge();
+               indexOfMin = i;
+
            }
         }
+        System.out.println(indexOfMin);
         System.out.println("-----------------------");
     }
 
