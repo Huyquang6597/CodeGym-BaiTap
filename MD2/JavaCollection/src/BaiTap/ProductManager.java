@@ -1,6 +1,7 @@
 package BaiTap;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ProductManager implements Manager<Product> {
@@ -59,5 +60,13 @@ public class ProductManager implements Manager<Product> {
      return -1;
 
     }
+
+    @Override
+    public int sortByPrice(int price) {
+        System.out.println("Sau khi sap xep : ");
+        Collections.sort(this.productsList);
+        return 0;
+    }
+
 
 }

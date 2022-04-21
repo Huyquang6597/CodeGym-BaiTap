@@ -1,6 +1,6 @@
 package BaiTap;
 
-public class Product {
+public class Product implements Comparable<Product>{
     private String name;
     private int id;
     private int productPrice;
@@ -36,5 +36,19 @@ public class Product {
 
     public void setProductPrice(int productPrice) {
         this.productPrice = productPrice;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                ", productPrice=" + productPrice +
+                '}';
+    }
+
+    @Override
+    public int compareTo(Product o) {
+        return this.getProductPrice() - o.getProductPrice();
     }
 }

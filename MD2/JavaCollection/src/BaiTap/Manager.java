@@ -7,4 +7,5 @@ public interface Manager<T> {
     void display();
     int findById(int id);
     int findByName(String name);
+    int sortByPrice(int price);
 }
