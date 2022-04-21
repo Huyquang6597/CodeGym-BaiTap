@@ -50,7 +50,7 @@ public class QuanLySach implements QuanLy<Document> {
 //    }
 
     @Override
-    public int findByType(Document document) {
+    public int findByType(Document document , int id) {
         return 0;
     }
 
