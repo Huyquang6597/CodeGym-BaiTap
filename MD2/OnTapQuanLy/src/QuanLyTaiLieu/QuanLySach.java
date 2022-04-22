@@ -6,6 +6,10 @@ import java.util.List;
 public class QuanLySach implements QuanLy<Document> {
     private List<Document> documentList = new ArrayList<>();
 
+
+    public QuanLySach(){
+    }
+
     @Override
     public void add(Document document) {
         documentList.add(document);
@@ -26,6 +30,20 @@ public class QuanLySach implements QuanLy<Document> {
             System.out.println(documentList.get(i));
         }
         System.out.println("===========================");
+    }
+    public void displayBook(){
+        for (Document t : documentList){
+            if (t instanceof Book){
+                System.out.println(t);
+            }
+        }
+    }
+    public void displayMagazine(){
+        for (Document t : documentList){
+            if (t instanceof Magazine){
+                System.out.println(t);
+            }
+        }
     }
 
     @Override

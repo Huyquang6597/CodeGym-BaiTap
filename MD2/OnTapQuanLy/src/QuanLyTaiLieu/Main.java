@@ -23,12 +23,12 @@ public class Main {
 
             if (choice == 1) {
                 System.out.println("Nhap ten tai lieu");
-                String maTaiLieu = scanner.nextLine();// sc.NextLine() là mỗi lần enter máy sẽ hiểu là mình đã nhập
+                String maTaiLieu = scanner.nextLine();
                 System.out.println("Nhap ten nha xuat ban");
-                int tenNXB = scanner.nextInt(); //Integer.parseInt(sc.nextLine()); Ép kiểu về kiểu số thực nhưng vẫn là sc.NextLine()
+                String tenNXB = scanner.nextLine();
                 System.out.println("Nhap so ban phat hanh");
-                String banPhatHanh = scanner.nextLine();
-                Document dc = new Document(maTaiLieu, tenNXB, banPhatHanh);
+                int banPhatHanh = scanner.nextInt();
+                Document dc = new Document( tenNXB, banPhatHanh);
                 ql.add(dc);
                 ql.display();
 

@@ -1,6 +1,6 @@
 package QuanLyTaiLieu;
 
-public class Book extends Document{
+public class Book extends Document {
     private String tenTacGia;
     private int soTrang;
 
@@ -13,7 +13,7 @@ public class Book extends Document{
     }
 
     public Book(int maTaiLieu, String tenNXB, int banPhatHanh, String tenTacGia, int soTrang) {
-        super(maTaiLieu, tenNXB, banPhatHanh);
+        super(tenNXB, banPhatHanh);
         this.tenTacGia = tenTacGia;
         this.soTrang = soTrang;
     }
@@ -36,6 +36,6 @@ public class Book extends Document{
 
     @Override
     public String toString() {
-        return super.toString() + "Book{" + "tenTacGia='" + tenTacGia + '\'' + ", soTrang=" + soTrang + '}';
+        return "Sach: " + super.toString() + ", " + soTrang + ";";
     }
 }

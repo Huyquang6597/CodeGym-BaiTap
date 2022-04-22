@@ -4,12 +4,14 @@ public class Document {
     private int maTaiLieu;
     private String tenNXB;
     private int banPhatHanh;
+    private static int autoId = 0;
 
     public Document() {
     }
 
-    public Document(int maTaiLieu, String tenNXB, int banPhatHanh) {
-        this.maTaiLieu = maTaiLieu;
+    public Document (String tenNXB, int banPhatHanh) {
+        this.maTaiLieu = autoId;
+        autoId++;
         this.tenNXB = tenNXB;
         this.banPhatHanh = banPhatHanh;
     }
@@ -40,6 +42,6 @@ public class Document {
 
     @Override
     public String toString() {
-        return "Tai lieu{" + "Ma tai lieu: " + maTaiLieu + ", Ten NXB: " + tenNXB + '\'' + ", So ban phat hanh: " + banPhatHanh + '}';
+        return  maTaiLieu + ", " + tenNXB + ", " + banPhatHanh + ";";
     }
 }

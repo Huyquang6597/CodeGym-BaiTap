@@ -11,7 +11,7 @@ public class Newspaper extends Document{
     }
 
     public Newspaper(int maTaiLieu, String tenNXB, int banPhatHanh, int ngayPhatHanh) {
-        super(maTaiLieu, tenNXB, banPhatHanh);
+        super(tenNXB, banPhatHanh);
         this.ngayPhatHanh = ngayPhatHanh;
     }
 

@@ -13,7 +13,7 @@ public class Magazine extends Document{
     }
 
     public Magazine(int maTaiLieu, String tenNXB, int banPhatHanh, int soPhatHanh, int thangPhatHanh) {
-        super(maTaiLieu, tenNXB, banPhatHanh);
+        super(tenNXB, banPhatHanh);
         this.soPhatHanh = soPhatHanh;
         this.thangPhatHanh = thangPhatHanh;
     }
@@ -36,6 +36,6 @@ public class Magazine extends Document{
 
     @Override
     public String toString() {
-        return super.toString() + "Tap chi {" + "soPhatHanh=" + soPhatHanh + ", thangPhatHanh=" + thangPhatHanh + '}';
+        return "Tap chi: " + super.toString() + ", " + soPhatHanh + ";";
     }
 }
