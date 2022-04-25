@@ -7,7 +7,7 @@ public class QuanLySach implements QuanLy<Document> {
     private List<Document> documentList = new ArrayList<>();
 
 
-    public QuanLySach(){
+    public QuanLySach() {
     }
 
     @Override
@@ -31,16 +31,18 @@ public class QuanLySach implements QuanLy<Document> {
         }
         System.out.println("===========================");
     }
-    public void displayBook(){
-        for (Document t : documentList){
-            if (t instanceof Book){
+
+    public void displayBook() {
+        for (Document t : documentList) {
+            if (t instanceof Book) {
                 System.out.println(t);
             }
         }
     }
-    public void displayMagazine(){
-        for (Document t : documentList){
-            if (t instanceof Magazine){
+
+    public void displayMagazine() {
+        for (Document t : documentList) {
+            if (t instanceof Magazine) {
                 System.out.println(t);
             }
         }
@@ -68,12 +70,12 @@ public class QuanLySach implements QuanLy<Document> {
 //    }
 
     @Override
-    public int findByType(Document document , int id) {
+    public int findByType(Document document, int id) {
         return 0;
     }
 
     @Override
     public void exit() {
-
+        System.exit(0);
     }
 }
