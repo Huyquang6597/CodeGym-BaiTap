@@ -1,6 +1,7 @@
 package LuyenTapTextFile;
 
 import java.io.*;
+import java.util.Scanner;
 
 public class LuyenTapPrintWriterVaDocFileVoiScanner {
     public static void main(String[] args) throws FileNotFoundException {
@@ -21,17 +22,51 @@ public class LuyenTapPrintWriterVaDocFileVoiScanner {
 //            e.printStackTrace();
 //        }
 
-        try {
-            File inFile = new File("/Users/tranquanghuy/Desktop/CODEGYM - Bài tập/CodeGym-BaiTap/MD2/TextFile/src/LuyenTapTextFile/Demo");
-            FileReader fileReader = new FileReader(inFile); //Nối FileReader với 1 file text
-            BufferedReader reader = new BufferedReader(fileReader); // Nối BufferedReader với FileReader
-            String line = null;
-            while ((line = reader.readLine()) != null) { //Đọc từng dòng cho đến khi không đọc được gì nữa
-                System.out.println(line);
+//        try {
+//            File inFile = new File("/Users/tranquanghuy/Desktop/CODEGYM - Bài tập/CodeGym-BaiTap/MD2/TextFile/src/LuyenTapTextFile/Demo");
+//            FileReader fileReader = new FileReader(inFile); //Nối FileReader với 1 file text
+//            BufferedReader reader = new BufferedReader(fileReader); // Nối BufferedReader với FileReader
+//            String line = null;
+//            while ((line = reader.readLine()) != null) { //Đọc từng dòng cho đến khi không đọc được gì nữa
+//                System.out.println(line);
+//            }
+//            reader.close();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+
+
+
+        //Đọc 1 dãy số từ File với Scanner
+       File file = new File("/Users/tranquanghuy/Desktop/CODEGYM - Bài tập/CodeGym-BaiTap/MD2/TextFile/src/LuyenTapTextFile/Demo");
+       Scanner input = new Scanner(new File("/Users/tranquanghuy/Desktop/CODEGYM - Bài tập/CodeGym-BaiTap/MD2/TextFile/src/LuyenTapTextFile/Demo"));
+        String[] words = new String[100];
+
+        int [] numbers = new int[100];
+        int i =0;
+        if (input.hasNextLine()) {
+            input.nextLine();
+        }
+        while (input.hasNextInt()){
+            int num = input.nextInt();
+            numbers[i] = num;
+            i++;
+            if(i>=100){
+                break;
             }
-            reader.close();
-        } catch (Exception e) {
-            e.printStackTrace();
+        }
+showNumber(numbers);
+
+
+    }
+    private static void showNumber(int [] numbers){
+        for (int number : numbers ) {
+            if (number== 0){
+                continue;
+            }
+            System.out.println(number);
         }
     }
 }
+
+
