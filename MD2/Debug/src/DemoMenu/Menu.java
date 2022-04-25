@@ -64,10 +64,16 @@ public class Menu {
                 System.out.println("5. Thoat");
                 try {
                     choice = scanner.nextInt();
+                    if(choice <1 || choice>5){
+                        throw new Exception();
+                    }
                 }catch (InputMismatchException e){
                     System.out.println("Chi duoc nhap so");
                     scanner.nextLine();
-                }    switch (choice){
+                } catch (Exception e){
+                    System.out.println("Chi duoc nhap trong khoang 1-5");
+                }
+                switch (choice){
                     case 1:
                         System.out.println("Danh sach la");
                         break;
