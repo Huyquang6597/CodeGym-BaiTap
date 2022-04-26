@@ -36,35 +36,52 @@ public class LuyenTapPrintWriterVaDocFileVoiScanner {
 //        }
 
 
-
         //Đọc 1 dãy số từ File với Scanner
-       File file = new File("/Users/tranquanghuy/Desktop/CODEGYM - Bài tập/CodeGym-BaiTap/MD2/TextFile/src/LuyenTapTextFile/Demo");
-       Scanner input = new Scanner(new File("/Users/tranquanghuy/Desktop/CODEGYM - Bài tập/CodeGym-BaiTap/MD2/TextFile/src/LuyenTapTextFile/Demo"));
-        String[] words = new String[100];
+//        File file = new File("/Users/tranquanghuy/Desktop/CODEGYM - Bài tập/CodeGym-BaiTap/MD2/TextFile/src/LuyenTapTextFile/Demo");
+//        Scanner input = new Scanner(new File("/Users/tranquanghuy/Desktop/CODEGYM - Bài tập/CodeGym-BaiTap/MD2/TextFile/src/LuyenTapTextFile/Demo"));
+//        String[] words = new String[100];
+//
+//        int[] numbers = new int[100];
+//        int i = 0;
+//        if (input.hasNextLine()) {
+//            input.nextLine();
+//        }
+//        while (input.hasNextInt()) {
+//            int num = input.nextInt();
+//            numbers[i] = num;
+//            i++;
+//            if (i >= 100) {
+//                break;
+//            }
+//        }
+//        showNumber(numbers);
+//
+//
+//    }
+//
+//    private static void showNumber(int[] numbers) {
+//        for (int number : numbers) {
+//            if (number == 0) {
+//                continue;
+//            }
+//            System.out.println(number);
+//        }
 
-        int [] numbers = new int[100];
-        int i =0;
-        if (input.hasNextLine()) {
-            input.nextLine();
-        }
-        while (input.hasNextInt()){
-            int num = input.nextInt();
-            numbers[i] = num;
-            i++;
-            if(i>=100){
-                break;
-            }
-        }
-showNumber(numbers);
+//      ghi ra chữ với PrinWriter
+//        File file2 = new File("/Users/tranquanghuy/Desktop/CODEGYM - Bài tập/CodeGym-BaiTap/MD2/TextFile/src/LuyenTapTextFile/Demo");
+//        if(file2.exists()){
+//            System.out.println("File da ton tai!");
+//        }
+//        PrintWriter writer = new PrintWriter(file2);
+//        writer.write("hihehao");
+//        writer.close();
 
 
-    }
-    private static void showNumber(int [] numbers){
-        for (int number : numbers ) {
-            if (number== 0){
-                continue;
-            }
-            System.out.println(number);
+//     Đọc 1 dãy số từ file với scanner
+        Scanner scanner = new Scanner(new File("/Users/tranquanghuy/Desktop/CODEGYM - Bài tập/CodeGym-BaiTap/MD2/TextFile/src/LuyenTapTextFile/hhhh"));
+        while (scanner.hasNext()){
+            int s = scanner.nextInt();
+            System.out.println(s);
         }
     }
 }
