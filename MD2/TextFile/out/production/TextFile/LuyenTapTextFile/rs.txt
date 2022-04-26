@@ -1,3 +1,4 @@
 Tong la: 15
 Tich la: 150
- Max la: 5 
+ Max la: 5
+ Min la: 2 
