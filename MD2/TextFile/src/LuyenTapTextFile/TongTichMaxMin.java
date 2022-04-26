@@ -26,9 +26,9 @@ public class TongTichMaxMin {
             }
 
         }
-        FileWriter fw = new FileWriter("/Users/tranquanghuy/Desktop/CODEGYM - Bài tập/CodeGym-BaiTap/MD2/TextFile/src/LuyenTapTextFile/rs.txt");
+        FileWriter fw = new FileWriter("/Users/tranquanghuy/Desktop/CODEGYM - Bài tập/CodeGym-BaiTap/MD2/TextFile/src/LuyenTapTextFile/rs.txt",true);
         BufferedWriter bw = new BufferedWriter(fw);
-        bw.write("Tong la: "+ sum + "\n");
+        bw.write("Tong la: "+ sum + "\n"); //Thêm chuỗi vì đang ép kiểu chuỗi sang Interger
         bw.write("Tich la: "+ pof + "\n ");
         bw.write("Max la: "+ max + "\n ");
         bw.write("Min la: "+ min + " ");
