@@ -1,20 +1,22 @@
-package StaffMananger;
+package staffmananger;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
 public class StaffManagement implements Manager<Staff> {
     List<Staff> staffList = new ArrayList<>();
-File file = new File("ListStaff.csv");
 
-Scanner scanner = new Scanner(System.in);
+//    File file = new File("ListStaff.csv");
 
-final String PATH = "ListStaff.csv";
-FileReader fr = new FileReader(PATH);
-FileWriter fw = new FileWriter(PATH);
+
+    Scanner scanner = new Scanner(System.in);
+
+//    final String PATH = "ListStaff.csv";
+//
+//    FileReader fr = new FileReader(PATH);
+//    FileWriter fw = new FileWriter(PATH);
 
     public StaffManagement() throws IOException {
     }
@@ -39,7 +41,7 @@ FileWriter fw = new FileWriter(PATH);
         int indexOfName = findByName(name);
         if (indexOfName == -1) {
             System.out.println("Khong co!");
-        } else  {
+        } else {
 //            System.out.println("Nhap vao ten can sua: ");
 //            name = scanner.nextLine();
 
@@ -61,7 +63,12 @@ FileWriter fw = new FileWriter(PATH);
 
     @Override
     public void removeByName(String name) {
-
+        int indexOfName = findByName(name);
+        if (indexOfName == -1) {
+            System.out.println("Khong co nguoi can xoa");
+        } else {
+            staffList.remove(indexOfName);
+        }
     }
 
     @Override

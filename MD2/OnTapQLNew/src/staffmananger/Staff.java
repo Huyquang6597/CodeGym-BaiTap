@@ -1,4 +1,4 @@
-package StaffMananger;
+package staffmananger;
 
 public class Staff {
     private String name;
@@ -24,15 +24,29 @@ public class Staff {
         this.name = name;
     }
 
-    public boolean getType() {
-        return type;
+    public String getType() {
+        if(isType()){
+            return "Full-time";
+        } else {
+            return "Part-time";
+        }
     }
 
+    public boolean isType() {
+        return type;
+    }
+public String getStatus(){
+        if (isStatus()){
+            return "Dang lam";
+        } else {
+            return "Da nghi";
+        }
+}
     public void setType(boolean type) {
         this.type = type;
     }
 
-    public boolean getStatus() {
+    public boolean isStatus() {
         return status;
     }
 
@@ -52,8 +66,8 @@ public class Staff {
     public String toString() {
         return "Nhan vien: " +
                 "Ten: '" + name + '\'' +
-                ", Loai: '" + type + '\'' +
-                ", Hien trang: '" + status + '\'' +
+                ", Loai: '" + getType() + '\'' +
+                ", Hien trang: '" + getStatus() + '\'' +
                 ", Luong: " + salary +
                 '}';
     }

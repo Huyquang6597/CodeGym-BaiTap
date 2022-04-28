@@ -1,4 +1,4 @@
-package StaffMananger;
+package staffmananger;
 
 public interface Manager<T> {
     void show();

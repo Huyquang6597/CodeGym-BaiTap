@@ -15,10 +15,16 @@
       <change beforePath="$PROJECT_DIR$/../../IJ/src/com/company/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../IJ/untitled104.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StaffMananger/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StaffMananger/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StaffMananger/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StaffMananger/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StaffMananger/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StaffMananger/Staff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StaffMananger/StaffManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StaffMananger/StaffManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OnTapQLNew/StaffMananger/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnTapQLNew/StaffMananger/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OnTapQLNew/StaffMananger/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnTapQLNew/StaffMananger/Manager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OnTapQLNew/StaffMananger/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnTapQLNew/StaffMananger/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OnTapQLNew/StaffMananger/Staff.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnTapQLNew/StaffMananger/Staff.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OnTapQLNew/StaffMananger/StaffManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StaffMananger/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/staffmananger/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StaffMananger/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/staffmananger/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StaffMananger/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/staffmananger/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StaffMananger/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/staffmananger/Staff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StaffMananger/StaffManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/staffmananger/StaffManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TextFile/out/production/TextFile/LuyenTapTextFile/inRaNghiemPTVaoFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TextFile/out/production/TextFile/LuyenTapTextFile/inRaNghiemPTVaoFile.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TextFile/src/LuyenTapTextFile/inRaNghiemPTVaoFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TextFile/src/LuyenTapTextFile/inRaNghiemPTVaoFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Vong_Lap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Vong_Lap/.idea/workspace.xml" afterDir="false" />
@@ -122,11 +128,11 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StaffMananger.Main" />
+      <option name="MAIN_CLASS_NAME" value="staffmananger.Main" />
       <module name="OnTapQLNew" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="StaffMananger.*" />
+          <option name="PATTERN" value="staffmananger.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -152,7 +158,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1651115148128</updated>
-      <workItem from="1651115149876" duration="7744000" />
+      <workItem from="1651115149876" duration="10097000" />
     </task>
     <servers />
   </component>

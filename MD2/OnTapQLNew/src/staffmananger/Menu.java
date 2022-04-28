@@ -1,6 +1,5 @@
-package StaffMananger;
+package staffmananger;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -43,18 +42,18 @@ public class Menu {
             case 2:
                 menuSearchStaff();
                 break;
-            case 3:
-                menuPrintFullTime();
-                break;
+//            case 3:
+//                menuPrintFullTime();
+//                break;
             case 4:
                 menuEditStaffInfo();
                 break;
-            case 5:
-                menuChangeStaffStatus();
-                break;
-            case 6:
-                menuCalToTalSalary();
-                break;
+//            case 5:
+//                menuChangeStaffStatus();
+//                break;
+//            case 6:
+//                menuCalToTalSalary();
+//                break;
             default:
                 System.exit(7);
                 break;
@@ -122,11 +121,11 @@ public class Menu {
             System.out.println("Nhap vao tien luong cua nhan vien: ");
             long salary = scanner.nextLong();
             staffManager.editByName(editByName, new Staff(name, type, status, salary));
-            menuMain();
+
         } else {
             System.out.println("Khong co!");
         }
-
-
+        System.out.println("Da sua thanh cong!");
+        menuMain();
     }
 }
