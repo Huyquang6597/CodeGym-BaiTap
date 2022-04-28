@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f26d4983-9ca7-49c8-8d88-2f6dd826b09d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/staffmananger/WriteAndReadFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../IJ/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../IJ/.idea/description.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../IJ/.idea/encodings.xml" beforeDir="false" />
@@ -15,9 +16,7 @@
       <change beforePath="$PROJECT_DIR$/../../IJ/src/com/company/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../IJ/untitled104.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OnTapQLNew/staffmananger/StaffManagement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnTapQLNew/staffmananger/StaffManagement.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/staffmananger/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/staffmananger/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/staffmananger/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/staffmananger/Staff.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/staffmananger/StaffManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/staffmananger/StaffManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TextFile/out/production/TextFile/LuyenTapTextFile/inRaNghiemPTVaoFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TextFile/out/production/TextFile/LuyenTapTextFile/inRaNghiemPTVaoFile.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TextFile/src/LuyenTapTextFile/inRaNghiemPTVaoFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TextFile/src/LuyenTapTextFile/inRaNghiemPTVaoFile.java" afterDir="false" />
@@ -152,7 +151,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1651115148128</updated>
-      <workItem from="1651115149876" duration="15397000" />
+      <workItem from="1651115149876" duration="19814000" />
     </task>
     <servers />
   </component>

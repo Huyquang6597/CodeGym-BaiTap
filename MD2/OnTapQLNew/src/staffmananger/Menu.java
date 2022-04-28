@@ -10,7 +10,7 @@ public class Menu {
     int choice;
     Scanner scanner = new Scanner(System.in);
 
-    public Menu() throws IOException {
+    public Menu() throws Exception {
     }
 
     public void menuMain() {
@@ -138,7 +138,7 @@ public class Menu {
         if (staffManager.findByName(nameS) != -1) {
             System.out.println("Ban co muon thay doi trang thai cua nhan vien" + nameS + "? nhan 'Y' de tiep tuc");
             String nameC = scanner.nextLine();
-            if (nameC.equals("y")) {
+            if (nameC.equals("y")) { //biến nameC so sánh bằng với dạng String 'y' thì lệnh thực thi
                 staffManager.updateStaffStatus(nameS);
                 System.out.println("Da thay doi thanh cong");
             } else {

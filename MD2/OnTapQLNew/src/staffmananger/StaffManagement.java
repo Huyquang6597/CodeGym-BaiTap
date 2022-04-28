@@ -6,19 +6,16 @@ import java.util.List;
 import java.util.Scanner;
 
 public class StaffManagement implements Manager<Staff> {
-    List<Staff> staffList = new ArrayList<>();
+    List<Staff> staffList ;
+    final String path = "/Users/tranquanghuy/Desktop/CODEGYM - Bài tập/CodeGym-BaiTap/MD2/OnTapQLNew/ListStaff.csv";
+        File filePath = new File(path);
+    WriteAndReadFile writeAndReadFile = new WriteAndReadFile();
 
-//    File file = new File("ListStaff.csv");
 
+    public StaffManagement() throws Exception {
+        writeAndReadFile.readFile(path,staffList);
 
-    Scanner scanner = new Scanner(System.in);
-
-    final String PATH = "ListStaff.csv";
-
-    FileReader fr = new FileReader(PATH);
-    FileWriter fw = new FileWriter(PATH);
-
-    public StaffManagement() throws IOException {
+        writeAndReadFile.writeFile(path,staffList);
     }
 
 
@@ -55,7 +52,6 @@ public class StaffManagement implements Manager<Staff> {
         status = !status;
         staffList.get(index).setStatus(status);
     }
-
 
 
     @Override
