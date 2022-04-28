@@ -42,18 +42,18 @@ public class Menu {
             case 2:
                 menuSearchStaff();
                 break;
-//            case 3:
-//                menuPrintFullTime();
-//                break;
+            case 3:
+                menuPrintFullTime();
+                break;
             case 4:
                 menuEditStaffInfo();
                 break;
-//            case 5:
-//                menuChangeStaffStatus();
-//                break;
-//            case 6:
-//                menuCalToTalSalary();
-//                break;
+            case 5:
+                menuChangeStaffStatus();
+                break;
+            case 6:
+                menuCalToTalSalary();
+                break;
             default:
                 System.exit(7);
                 break;
@@ -98,8 +98,6 @@ public class Menu {
 
     public void menuEditStaffInfo() {
         System.out.println("Nhap vao ten can sua: ");
-        scanner.nextLine();
-
         String editByName = scanner.nextLine();
         int a = staffManager.findByName(editByName);
         if (a != -1) {
@@ -111,7 +109,7 @@ public class Menu {
                 type = scanner.nextBoolean();
                 System.out.println("Co phai nhan vien dang lam khong?  true - Dang lam / false - Da nghi");
                 status = scanner.nextBoolean();
-            } catch (InputMismatchException e) {
+            } catch (InputMismatchException e) { //InputMismatchException : nếu nhập không phải dạng true/false thì sẽ bắt nhập lại chỉ được 1 lần
                 scanner.nextLine();
                 System.out.println("Co phai nhan vien Full-time khong?  true - Full-time / false - Part-time");
                 type = scanner.nextBoolean();
@@ -127,5 +125,32 @@ public class Menu {
         }
         System.out.println("Da sua thanh cong!");
         menuMain();
+    }
+
+    public void menuPrintFullTime() {
+
+    }
+
+    public void menuChangeStaffStatus() {
+        System.out.println("Nhap ten nhan vien muon tim: ");
+        scanner.nextLine();
+        String nameS = scanner.nextLine();
+        if (staffManager.findByName(nameS) != -1) {
+            System.out.println("Ban co muon thay doi trang thai cua nhan vien" + nameS + "? nhan 'Y' de tiep tuc");
+            String nameC = scanner.nextLine();
+            if (nameC.equals("y")) {
+                staffManager.updateStaffStatus(nameS);
+                System.out.println("Da thay doi thanh cong");
+            } else {
+                System.out.println("Lenh da huy bo");
+            }
+        } else {
+            System.out.println("Khong tim thay nhan vien!");
+        }
+        menuMain();
+    }
+
+    public void menuCalToTalSalary() {
+
     }
 }

@@ -25,7 +25,7 @@ public class Staff {
     }
 
     public String getType() {
-        if(isType()){
+        if (isType()) {
             return "Full-time";
         } else {
             return "Part-time";
@@ -35,13 +35,15 @@ public class Staff {
     public boolean isType() {
         return type;
     }
-public String getStatus(){
-        if (isStatus()){
+
+    public String getStatus() {
+        if (isStatus()) {
             return "Dang lam";
         } else {
             return "Da nghi";
         }
-}
+    }
+
     public void setType(boolean type) {
         this.type = type;
     }

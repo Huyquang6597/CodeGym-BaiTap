@@ -13,10 +13,10 @@ public class StaffManagement implements Manager<Staff> {
 
     Scanner scanner = new Scanner(System.in);
 
-//    final String PATH = "ListStaff.csv";
-//
-//    FileReader fr = new FileReader(PATH);
-//    FileWriter fw = new FileWriter(PATH);
+    final String PATH = "ListStaff.csv";
+
+    FileReader fr = new FileReader(PATH);
+    FileWriter fw = new FileWriter(PATH);
 
     public StaffManagement() throws IOException {
     }
@@ -42,9 +42,6 @@ public class StaffManagement implements Manager<Staff> {
         if (indexOfName == -1) {
             System.out.println("Khong co!");
         } else {
-//            System.out.println("Nhap vao ten can sua: ");
-//            name = scanner.nextLine();
-
             staffList.set(indexOfName, staff);
         }
         System.out.println("Da sua thanh cong");
@@ -53,8 +50,13 @@ public class StaffManagement implements Manager<Staff> {
 
     @Override
     public void updateStaffStatus(String name) {
-
+        int index = findByName(name);
+        boolean status = staffList.get(index).isStatus();
+        status = !status;
+        staffList.get(index).setStatus(status);
     }
+
+
 
     @Override
     public void printFullTime() {
