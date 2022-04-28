@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f26d4983-9ca7-49c8-8d88-2f6dd826b09d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/StaffMananger/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StaffMananger/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StaffMananger/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StaffMananger/Staff.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StaffMananger/StaffManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../IJ/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../IJ/.idea/description.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../IJ/.idea/encodings.xml" beforeDir="false" />
@@ -19,6 +14,11 @@
       <change beforePath="$PROJECT_DIR$/../../IJ/src/DemoJava.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../IJ/src/com/company/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../IJ/untitled104.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StaffMananger/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StaffMananger/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StaffMananger/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StaffMananger/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StaffMananger/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StaffMananger/Staff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StaffMananger/StaffManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StaffMananger/StaffManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TextFile/out/production/TextFile/LuyenTapTextFile/inRaNghiemPTVaoFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TextFile/out/production/TextFile/LuyenTapTextFile/inRaNghiemPTVaoFile.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TextFile/src/LuyenTapTextFile/inRaNghiemPTVaoFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TextFile/src/LuyenTapTextFile/inRaNghiemPTVaoFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Vong_Lap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Vong_Lap/.idea/workspace.xml" afterDir="false" />
@@ -108,8 +108,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="OnTapQLNew" />
@@ -120,6 +121,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StaffMananger.Main" />
+      <module name="OnTapQLNew" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="StaffMananger.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main (1)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -129,7 +152,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1651115148128</updated>
-      <workItem from="1651115149876" duration="4133000" />
+      <workItem from="1651115149876" duration="7744000" />
     </task>
     <servers />
   </component>

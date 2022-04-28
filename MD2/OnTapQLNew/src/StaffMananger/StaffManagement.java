@@ -1,10 +1,23 @@
 package StaffMananger;
 
+import java.io.*;
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.List;
+import java.util.Scanner;
 
-public class StaffManager implements Manager<Staff> {
+public class StaffManagement implements Manager<Staff> {
     List<Staff> staffList = new ArrayList<>();
+File file = new File("ListStaff.csv");
+
+Scanner scanner = new Scanner(System.in);
+
+final String PATH = "ListStaff.csv";
+FileReader fr = new FileReader(PATH);
+FileWriter fw = new FileWriter(PATH);
+
+    public StaffManagement() throws IOException {
+    }
 
 
     @Override
@@ -26,9 +39,14 @@ public class StaffManager implements Manager<Staff> {
         int indexOfName = findByName(name);
         if (indexOfName == -1) {
             System.out.println("Khong co!");
-        } else {
+        } else  {
+//            System.out.println("Nhap vao ten can sua: ");
+//            name = scanner.nextLine();
+
             staffList.set(indexOfName, staff);
         }
+        System.out.println("Da sua thanh cong");
+
     }
 
     @Override

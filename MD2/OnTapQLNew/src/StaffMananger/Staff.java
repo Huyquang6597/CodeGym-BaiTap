@@ -2,14 +2,14 @@ package StaffMananger;
 
 public class Staff {
     private String name;
-    private String type;
-    private String status;
-    private double salary;
+    private boolean type;
+    private boolean status;
+    private long salary;
 
     public Staff() {
     }
 
-    public Staff(String name, String type, String status, double salary) {
+    public Staff(String name, boolean type, boolean status, long salary) {
         this.name = name;
         this.type = type;
         this.status = status;
@@ -24,19 +24,19 @@ public class Staff {
         this.name = name;
     }
 
-    public String getType() {
+    public boolean getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(boolean type) {
         this.type = type;
     }
 
-    public String getStatus() {
+    public boolean getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(boolean status) {
         this.status = status;
     }
 
@@ -44,7 +44,7 @@ public class Staff {
         return salary;
     }
 
-    public void setSalary(double salary) {
+    public void setSalary(long salary) {
         this.salary = salary;
     }
 
