@@ -6,17 +6,17 @@ import java.util.List;
 import java.util.Scanner;
 
 public class StaffManagement implements Manager<Staff> {
-    List<Staff> staffList ;
-    final String path = "/Users/tranquanghuy/Desktop/CODEGYM - Bài tập/CodeGym-BaiTap/MD2/OnTapQLNew/ListStaff.csv";
-        File filePath = new File(path);
-    WriteAndReadFile writeAndReadFile = new WriteAndReadFile();
-
-
-    public StaffManagement() throws Exception {
-        writeAndReadFile.readFile(path,staffList);
-
-        writeAndReadFile.writeFile(path,staffList);
-    }
+    List<Staff> staffList = new ArrayList<>();
+//    final String path = "/Users/tranquanghuy/Desktop/CODEGYM - Bài tập/CodeGym-BaiTap/MD2/OnTapQLNew/ListStaff.csv";
+//    File filePath = new File(path);
+//    WriteAndReadFile writeAndReadFile = new WriteAndReadFile();
+//
+//
+//    public StaffManagement() throws Exception {
+//        writeAndReadFile.readFile(path, staffList);
+//
+//        writeAndReadFile.writeFile(path, staffList);
+//    }
 
 
     @Override
@@ -77,5 +77,48 @@ public class StaffManagement implements Manager<Staff> {
             }
         }
         return -1;
+    }
+
+    public int calSalaryFulltime() {
+        int sum = 0;
+        for (Staff staff : staffList) {
+            if (staff.isType()) {
+                sum += staff.getSalary();
+            }
+        }
+        return sum;
+    }
+
+    public int calSalaryParttime() {
+        int sum = 0;
+        for (Staff staff : staffList) {
+            if (!staff.isType()) {
+                sum += staff.getSalary();
+            }
+        }
+        return sum;
+    }
+
+    public int calTotalSalary(){
+        int sum = 0;
+        for (Staff staff: staffList) {
+           sum += staff.getSalary();
+        } return sum;
+    }
+
+    public void filterFulltimeStaff(){
+        for (Staff staff: staffList) {
+            if(staff.isType()){
+                System.out.println(staff);
+            }
+        }
+    }
+
+    public void filterParttimeStaff(){
+        for (Staff staff: staffList) {
+            if(!staff.isType()){
+                System.out.println(staff);
+            }
+        }
     }
 }

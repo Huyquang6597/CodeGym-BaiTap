@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f26d4983-9ca7-49c8-8d88-2f6dd826b09d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/staffmananger/WriteAndReadFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../IJ/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../IJ/.idea/description.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../IJ/.idea/encodings.xml" beforeDir="false" />
@@ -16,6 +15,7 @@
       <change beforePath="$PROJECT_DIR$/../../IJ/src/com/company/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../IJ/untitled104.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OnTapQLNew/staffmananger/StaffManagement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnTapQLNew/staffmananger/StaffManagement.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/staffmananger/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/staffmananger/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/staffmananger/StaffManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/staffmananger/StaffManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TextFile/out/production/TextFile/LuyenTapTextFile/inRaNghiemPTVaoFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TextFile/out/production/TextFile/LuyenTapTextFile/inRaNghiemPTVaoFile.class" afterDir="false" />
@@ -40,6 +40,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -151,7 +159,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1651115148128</updated>
-      <workItem from="1651115149876" duration="19814000" />
+      <workItem from="1651115149876" duration="25698000" />
     </task>
     <servers />
   </component>

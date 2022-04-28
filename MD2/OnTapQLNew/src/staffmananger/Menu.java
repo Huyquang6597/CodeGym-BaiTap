@@ -52,7 +52,7 @@ public class Menu {
                 menuChangeStaffStatus();
                 break;
             case 6:
-                menuCalToTalSalary();
+                menuSal();
                 break;
             default:
                 System.exit(7);
@@ -60,11 +60,13 @@ public class Menu {
         }
     }
 
+    //Chức năng 0
     public void menuShow() {
         staffManager.show();
         menuMain();
     }
 
+    //Chức năng 1
     public void menuAddStaff() {
         System.out.println("Nhap vao ten nhan vien: ");
         scanner.nextLine();
@@ -81,6 +83,7 @@ public class Menu {
 
     }
 
+    //Chức năng 2
     public void menuSearchStaff() {
         System.out.println("Nhap ten nhan vien muon tim: ");
         scanner.nextLine();
@@ -96,6 +99,30 @@ public class Menu {
         menuMain();
     }
 
+    //Chức năng 3
+    void menuPrintFullTime() {
+        str = """
+                 ---Danh sach nhan vien
+                 1. Nhan vien Full-time
+                 2. Nhan vien Part-time
+                 3. Quay lai
+                    
+                """;
+        System.out.println(str);
+        choice = scanner.nextInt();
+        switch (choice) {
+            case 1:
+                staffManager.filterFulltimeStaff();
+            case 2:
+                staffManager.filterParttimeStaff();
+            default:
+                menuMain();
+        }
+
+    }
+
+
+    //Chức năng 4
     public void menuEditStaffInfo() {
         System.out.println("Nhap vao ten can sua: ");
         String editByName = scanner.nextLine();
@@ -127,10 +154,8 @@ public class Menu {
         menuMain();
     }
 
-    public void menuPrintFullTime() {
 
-    }
-
+    //Chức năng 5
     public void menuChangeStaffStatus() {
         System.out.println("Nhap ten nhan vien muon tim: ");
         scanner.nextLine();
@@ -150,7 +175,44 @@ public class Menu {
         menuMain();
     }
 
-    public void menuCalToTalSalary() {
+    //Chức năng 6
+    void menuSal() {
+        str = """
+                 ---Tinh tong luong nhan vien
+                 1. Nhan vien Full-time
+                 2. Nhan vien Part-time
+                 3. Toan bo nhan vien
+                 4. Quay lai
+                                        
+                """;
+        System.out.println(str);
+        choice = scanner.nextInt();
+        switch (choice) {
+            case 1:
+                menuCalSalaryFulltime();
+            case 2:
+                menuCalSalaryParttime();
+            case 3:
+                menuCalToTalSalary();
+            default:
+                menuMain();
+        }
 
+    }
+
+
+    public void menuCalSalaryParttime() {
+        System.out.println("Tong luong cua nhan vien lam Part-time la: " + staffManager.calSalaryParttime());
+        menuMain();
+    }
+
+    public void menuCalSalaryFulltime() {
+        System.out.println("Tong luong cua nhan vien lam Part-time la: " + staffManager.calSalaryFulltime());
+        menuMain();
+    }
+
+    public void menuCalToTalSalary() {
+        System.out.println("Tong tien luong cua nhan vien la: " + staffManager.calTotalSalary());
+        menuMain();
     }
 }
