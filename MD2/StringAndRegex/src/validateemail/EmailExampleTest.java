@@ -1,4 +1,4 @@
-package ValidateEmail;
+package validateemail;
 
 public class EmailExampleTest {
     private static ValidateEmail emailExample;
